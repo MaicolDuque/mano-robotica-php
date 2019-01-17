@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mano Robótica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css" />
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+  <div style="position: relative;width: 50%;margin: 0 auto">
+    <div style="float: left;">
+      <img src="img/cuerpo.png" class="Dcuerpo"  style="z-index: 1;" alt="">
+      <img src="img/pulgar.png" class="Dpulgar" style="z-index: 5;" alt="">
+      <img src="img/indice.png" class="Dindice" style="z-index: 1;" alt="" >
+      <img src="img/corazon.png" class="Dcorazon" style="z-index: 1;" alt="">
+      <img src="img/anular.png" class="Danular" style="z-index: 1;" alt="">
+      <img src="img/menique.png" class="Dmenique" style="z-index: 1;" alt="">
+    </div>
+    
+    <div style="position: relative;float: left;width: 100%;z-index: 10;" id="principal">
+      <div  style="position: absolute;width: 10%;margin-left: 21%;" >
+      </div>
+  
+      <div class="pulgar"  style="position: absolute;cursor:pointer;width: 10%;margin-left: 21%;height:100%" onclick="fingers(event.target)">
+      </div>
+
+      <div class="pulgar"  id="pulgarCerrado" style="position: absolute;cursor:pointer;width: 30%;bottom:0;margin-left: 21%;height:61%;z-index: 12;display: none" onclick="fingers(event.target)">
+      </div>
+  
+      <div class="indice" dedo="indice" style="position: absolute;cursor:pointer;width: 12%;margin-left: 32%;height:100%" onclick="fingers(event.target)">
+      </div>
+  
+      <div class="corazon" style="position: absolute;cursor:pointer;width: 8.6%;margin-left: 45%;height:100%" onclick="fingers(event.target)">
+      </div>
+  
+      <div class="anular" style="position: absolute;cursor:pointer;width: 9%;margin-left: 55.4%;height:100%" onclick="fingers(event.target)">
+      </div>
+  
+      <div class="menique" style="position: absolute;cursor:pointer;width: 10%;margin-left: 65%;height:100%" onclick="fingers(event.target)">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
